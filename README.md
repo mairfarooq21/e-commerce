@@ -43,7 +43,7 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/mairfarooq21/live-docs.git
+git clone https://github.com/mairfarooq21/ecommerce.git
 ```
 
 **Installation**
