@@ -45,11 +45,8 @@ npm install
 ```
 
 **Set Up Environment Variables**
-**frontend and admin**
-```env
-VITE_BACKEND_URL = 'http://localhost:4000'
-```
-**backend**
+
+**for backend**
 ```env
 MONGODB_URI =
 CLOUDINARY_API_KEY =
@@ -59,6 +56,10 @@ JWT_SECRET =
 ADMIN_EMAIL =
 ADMIN_PASSWORD =
 STRIPE_SECRET_KEY =
+```
+**for frontend and admin**
+```env
+VITE_BACKEND_URL = 'http://localhost:4000'
 ```
 
 **Running the Project**
