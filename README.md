@@ -45,7 +45,11 @@ npm install
 ```
 
 **Set Up Environment Variables**
-
+**frontend and admin**
+```env
+VITE_BACKEND_URL = 'http://localhost:4000'
+```
+**backend**
 ```env
 MONGODB_URI =
 CLOUDINARY_API_KEY =
@@ -56,8 +60,6 @@ ADMIN_EMAIL =
 ADMIN_PASSWORD =
 STRIPE_SECRET_KEY =
 ```
-
-Replace the placeholder values with your actual Clerk & LiveBlocks credentials. You can obtain these credentials by signing up on the [Clerk](https://clerk.com/) and [Liveblocks](liveblocks.io/) website.
 
 **Running the Project**
 
