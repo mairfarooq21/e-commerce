@@ -12,25 +12,17 @@ An e-commerce website that delivers a seamless shopping experience with secure u
 
 ## <a name="features">Features</a>
 
-**Authentication**: User authentication using GitHub through NextAuth, ensuring secure sign-in/out and session management.
+**User Authentication**: Secure login and registration with JWT authentication, ensuring only authorized access to user accounts.
 
-**Collaborative Text Editor**: Multiple users can edit the same document simultaneously with real-time updates.
+**Product Catalog**: Browse through a wide variety of products with detailed descriptions, images, and pricing.
 
-**Documents Management**
-   - **Create Documents**: Users can create new documents, which are automatically saved and listed.
-   - **Delete Documents**: Users can delete documents they own.
-   - **Share Documents**: Users can share documents via email or link with view/edit permissions.
-   - **List Documents**: Display all documents owned or shared with the user, with search and sorting functionalities.
+**Search and Filters**: Easily find products using the advanced search feature and filter options based on categories, price, and more
 
-**Comments**: Users can add inline and general comments, with threading for discussions.
+**Shopping Cart**: Add, remove, or update items in the cart, with real-time updates and total price calculation.
 
-**Active Collaborators on Text Editor**: Show active collaborators with real-time presence indicators.
+**Secure Payment Integration**: Process transactions securely with integrated payment gateways, ensuring smooth and safe payments.
 
-**Notifications**: Notify users of document shares, new comments, and collaborator activities.
-
-**Responsive**: The application is responsive across all devices.
-
-and many more, including code architecture and reusability 
+**Admin Panel**: Manage products, users, and orders efficiently with a user-friendly admin dashboard.
 
 ## <a name="quick-start">Quick Start</a>
 
