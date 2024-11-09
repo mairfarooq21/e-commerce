@@ -4,11 +4,11 @@ Live Docs is a collaborative web app for real-time document creation and editing
 
 ## <a name="tech-stack">Tech Stack</a>
 
-- Next.js
-- Tailwind CSS
-- TypeScript
-- Liveblocks
-- ShadCN
+- React.js
+- Tailwindcss
+- Node.js
+- Express
+- MongoDB
 
 ## <a name="features">Features</a>
 
