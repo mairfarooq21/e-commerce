@@ -1,6 +1,6 @@
 ## <a name="introduction">Introduction</a>
 
-Live Docs is a collaborative web app for real-time document creation and editing. It allows multiple users to work on the same document simultaneously, making it easy for teams to collaborate efficiently and stay synced. Perfect for students, professionals, and teams needing seamless collaboration.
+An e-commerce website that delivers a seamless shopping experience with secure user authentication and integrated payment options. The responsive design and admin panel make it ideal for efficient online management and smooth, scalable operations.
 
 ## <a name="tech-stack">Tech Stack</a>
 
