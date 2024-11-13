@@ -31,27 +31,27 @@ import React, { useState } from 'react';
 const slides = [
   {
     heading: 'Slide One',
-    imageUrl: 'https://i.ebayimg.com/images/g/sdgAAOSwb~1kcNkq/s-l500.webp',
-    backgroundColor: 'bg-blue-100',
-    dotColor: 'bg-blue-800',  // Color for the active dot
+    imageUrl: 'https://i.ebayimg.com/images/g/tPcAAOSwv9hm9tuQ/s-l500.webp',
+    backgroundColor: 'bg-[#2C3E50]',
+    dotColor: 'bg-white',  // Color for the active dot
   },
   {
     heading: 'Slide Two',
     imageUrl: 'https://i.ebayimg.com/images/g/JSQAAOSwUrllQDL2/s-l500.webp',
-    backgroundColor: 'bg-green-100',
-    dotColor: 'bg-green-800',  // Color for the active dot
+    backgroundColor: 'bg-[#3A3A3C]',
+    dotColor: 'bg-white',  // Color for the active dot
   },
   {
     heading: 'Slide Three',
     imageUrl: 'https://i.ebayimg.com/images/g/tPcAAOSwv9hm9tuQ/s-l500.webp',
-    backgroundColor: 'bg-yellow-100',
-    dotColor: 'bg-yellow-800',  // Color for the active dot
+    backgroundColor: 'bg-[#D35400]',
+    dotColor: 'bg-white',  // Color for the active dot
   },
   {
     heading: 'Slide Four',
     imageUrl: 'https://i.ebayimg.com/images/g/AOAAAOSwZU9kPwmB/s-l500.webp',
-    backgroundColor: 'bg-red-100',
-    dotColor: 'bg-red-800',  // Color for the active dot
+    backgroundColor: 'bg-[#1F4D30]',
+    dotColor: 'bg-white',  // Color for the active dot
   },
 ];
 
@@ -109,13 +109,13 @@ const Hero = () => {
       <div className="absolute bottom-4 right-4 flex space-x-2">
         <button
           onClick={prevSlide}
-          className="text-lg px-4 py-2 bg-gray-300 hover:bg-gray-400 text-white font-semibold rounded-md"
+          className="text-lg px-4 py-2 bg-gray-300 hover:bg-gray-400 text-black font-semibold rounded-md"
         >
           Prev
         </button>
         <button
           onClick={nextSlide}
-          className="text-lg px-4 py-2 bg-gray-300 hover:bg-gray-400 text-white font-semibold rounded-md"
+          className="text-lg px-4 py-2 bg-gray-300 hover:bg-gray-400 text-black font-semibold rounded-md"
         >
           Next
         </button>
