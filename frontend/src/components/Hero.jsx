@@ -27,31 +27,51 @@
 // export default Hero
 
 import React, { useState } from 'react';
+import img1 from "../assets/slide1.png";
+import img2 from "../assets/slide2.png";
+import img3 from "../assets/slide3.png";
+import img4 from "../assets/slide4.png";
 
 const slides = [
   {
     heading: 'Slide One',
-    imageUrl: 'https://i.ebayimg.com/images/g/tPcAAOSwv9hm9tuQ/s-l500.webp',
-    backgroundColor: 'bg-[#2C3E50]',
-    dotColor: 'bg-white',  // Color for the active dot
+    description: 'This is the description for Slide One.',
+    buttonText: 'Learn More',
+    imageUrl: img1,
+    backgroundColor: 'bg-[#FFCDD2]',
+    dotColor: 'bg-[#E57373]',
+    buttonColor: 'bg-[#E57373] ',
+    textColor: 'text-[#E57373]',
   },
   {
     heading: 'Slide Two',
-    imageUrl: 'https://i.ebayimg.com/images/g/JSQAAOSwUrllQDL2/s-l500.webp',
+    description: 'This is the description for Slide Two.',
+    buttonText: 'Explore',
+    imageUrl: img2,
     backgroundColor: 'bg-[#3A3A3C]',
-    dotColor: 'bg-white',  // Color for the active dot
+    dotColor: 'bg-white',
+    buttonColor: 'bg-green-600 hover:bg-green-700',
+    textColor: 'text-yellow-100',
   },
   {
     heading: 'Slide Three',
-    imageUrl: 'https://i.ebayimg.com/images/g/tPcAAOSwv9hm9tuQ/s-l500.webp',
-    backgroundColor: 'bg-[#D35400]',
-    dotColor: 'bg-white',  // Color for the active dot
+    description: 'This is the description for Slide Three.',
+    buttonText: 'Discover',
+    imageUrl: img3,
+    backgroundColor: 'bg-[#ff6a38]',
+    dotColor: 'bg-white',
+    buttonColor: 'bg-[#2f0e04]',
+    textColor: 'text-[#2f0e04]',
   },
   {
     heading: 'Slide Four',
-    imageUrl: 'https://i.ebayimg.com/images/g/AOAAAOSwZU9kPwmB/s-l500.webp',
+    description: 'This is the description for Slide Four.',
+    buttonText: 'Get Started',
+    imageUrl: img4,
     backgroundColor: 'bg-[#1F4D30]',
-    dotColor: 'bg-white',  // Color for the active dot
+    dotColor: 'bg-white',
+    buttonColor: 'bg-purple-600 hover:bg-purple-700',
+    textColor: 'text-gray-200',
   },
 ];
 
@@ -75,19 +95,25 @@ const Hero = () => {
   };
 
   return (
-    <div className={`relative mx-auto mt-10 ${slides[currentIndex].backgroundColor} p-4 rounded-lg shadow-lg`}>
-      {/* Main Image and Heading */}
-      <div className="flex items-center justify-between mb-4">
-        <div className="w-1/2">
-          <h2 className="text-2xl font-semibold text-gray-800">
+    <div className={`relative mx-auto mt-10 ${slides[currentIndex].backgroundColor} p-6 rounded-lg shadow-lg`}>
+      {/* Main Content */}
+      <div className="flex items-center justify-between mb-6">
+        <div className="w-1/2 space-y-4">
+          <h2 className={`text-2xl font-semibold ${slides[currentIndex].textColor}`}>
             {slides[currentIndex].heading}
           </h2>
+          <p className={`${slides[currentIndex].textColor}`}>
+            {slides[currentIndex].description}
+          </p>
+          <button className={`px-6 py-2 text-white font-semibold rounded-lg ${slides[currentIndex].buttonColor}`}>
+            {slides[currentIndex].buttonText}
+          </button>
         </div>
-        <div className="w-1/2">
+        <div className="w-1/2 h-[450px]">
           <img
             src={slides[currentIndex].imageUrl}
             alt={`Slide ${currentIndex + 1}`}
-            className="rounded-lg object-cover shadow-md"
+            className="rounded-lg w-full h-full object-cover"
           />
         </div>
       </div>
@@ -99,7 +125,7 @@ const Hero = () => {
             key={index}
             onClick={() => setSlide(index)}
             className={`h-2 w-2 rounded-full cursor-pointer ${
-              index === currentIndex ? slides[index].dotColor : 'bg-gray-300'
+              index === currentIndex ? slides[index].dotColor : 'bg-gray-400'
             }`}
           />
         ))}
